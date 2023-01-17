@@ -1,0 +1,441 @@
+/*font*/
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* basic */
+
+.dp_fx { display: flex; }
+.mbsmall{ margin-bottom: 8px; }
+.material-symbols-outlined{ font-size: 0.9rem !important; }
+* { margin: 0; padding: 0; }
+a{ color: black; text-decoration: none; }
+html, body { width: 100%; height: 100%;}
+
+
+/*레이아웃*/
+
+.mainBox {
+    width: 100%;
+    margin: auto;
+    min-height: 100%;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'NanumSquareNeo-Variable';
+
+}
+.mainBox > .sec {
+    width: 30%;
+    background-color: white;
+    margin-top: 24px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    border-radius: 12px;
+}
+.mainBox > #sec1 { padding-right: 30px; }
+.mainBox > #sec2 { padding-left: 20px; padding-right: 20px; height: auto !important;}
+.mainBox > #sec3 { background-color: #F8F8F8 !important; box-shadow: none;}
+.mainBox > .sec > .basicInforBox { width: 90%; margin: auto; background-color: white; }
+.mainBox > .sec > .basicInforBox > #mainImg {
+    padding: 3px;
+    border: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+.mainBox > .sec > .basicInforBox > .mainImg, .mainBox > .sec > .basicInforBox > .mainImg > .mainImg {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.mainBox > .sec > .basicInforBox > .username {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.mainBox > .sec > .basicInforBox > .usernameleft, .mainBox > .sec > .basicInforBox > .header_Box > .usernameleft{
+    text-align: left;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.mainBox > .sec > .basicInforBox > .hashTagBox {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+.mainBox > .sec >  .basicInforBox > .hashTagBox > .hasttag {
+    width: fit-content;
+    display: inline-block;
+    white-space: nowrap;
+    margin: auto;
+    background-color: #E8F2F3;
+    padding: 8px;
+    margin: 3px;
+    color: #888;
+    border-radius: 6px;
+    font-size: 0.825rem;
+}
+
+.mainBox > .sec > .basicInforBox > .introduceTextBox {
+    display: block;
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    margin-top: 24px;
+}
+
+.mainBox > .sec > .basicInforBox > .more_infoBox { width: 90%; margin: auto; margin-top: 24px; }
+.mainBox > .sec > .basicInforBox > .divTable{ width: 90%; margin-top: 24px; }
+.mainBox > .sec > .basicInforBox > .Line > td.lighter { padding-left: 12px; padding-right: 30px; }
+.mainBox > .sec > .basicInforBox > .Line > td.lighter { color: #828282; }
+.mainBox > .sec > .basicInforBox > .Line > td.icon span { color: #828282; }
+
+.mainBox > .sec > .basicInforBox > .priceBox {
+    width: 100%;
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.mainBox > .sec > .basicInforBox > .priceBox > .price {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    font-size: 1.1rem;
+}
+
+.mainBox > .sec > .basicInforBox >  .priceBox > .price > .BigText { font-weight: bold; }
+.mainBox > .sec > .basicInforBox .red { color: #CD2026; font-weight: bold; padding-right: 10px; }
+.mainBox > .sec > .basicInforBox > .more_infoBox > .sub_information { width: 100%; margin-top: 24px; }
+
+.mainBox > .sec > .basicInforBox > .sub_information > .infor_title,
+.mainBox > .sec > .basicInforBox > .sub_information > form > .infor_title{
+    font-size: 1.1rem;
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+
+.mainBox > .sec > .basicInforBox >  .sub_information > .infor_title >  .bar,
+.mainBox > .sec > .basicInforBox > .sub_information > form > .infor_title > .bar {
+    display: block;
+    width: 5px;
+    height: 1rem;
+    background-color: #CD2026;
+    margin-right: 20px;
+}
+
+.mainBox > .sec > .basicInforBox > .sub_information > .inforBox > .inforLabel,
+.mainBox > .sec > .basicInforBox > .sub_information > form > .inforBox > .inforLabel{
+    display: block;
+    font-size: 0.875rem;
+    color: #828282;
+    margin-bottom: 6px;
+}
+
+.mainBox > .sec > .basicInforBox > .sub_information > .inforBox,
+.mainBox > .sec > .basicInforBox > .sub_information > form > .inforBox{
+    margin-bottom: 24px;
+}
+
+.mainBox > .sec > .basicInforBox > .sub_information > .inforBox > .inforText,
+.mainBox > .sec > .basicInforBox > .sub_information > form > .inforBox > .inforText{
+    width: 100%;
+    background-color: #F5F5F7;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 12px;
+    font-size: 0.875rem;
+}
+
+
+
+.mainBox > .sec > .basicInforBox > .sub_information > .inforBox > .inforText  > .radio ,
+.mainBox > .sec > .basicInforBox > .sub_information > form > .inforBox > .inforText > .radio {
+    margin-left: 15px;
+    margin-right: 15px;
+    vertical-align: middle;
+    appearance: none;
+    border: max(2px, 0.1em) solid #ccc;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-top: 10.5px;
+}
+
+.mainBox > .sec > .basicInforBox > .sub_information > .inforBox > .inforText  > .radio:checked ,
+.mainBox > .sec > .basicInforBox > .sub_information > form > .inforBox > .inforText > .radio:checked {
+    border: 0.4em solid #CD2026;
+}
+
+.mainBox > .sec > .basicInforBox > .buttonBox > .submit_button,
+.mainBox > .sec > .basicInforBox > .sub_information > form > .submit_button{
+    border: none;
+    outline: none;
+    background-color: #CD2026;
+    color: white;
+    width: 100%;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 14px;
+    padding: 12px;
+    margin-top: 12px;
+    cursor: pointer;
+    margin-bottom: 24px;
+    font-family: 'NanumSquareNeo-Variable';
+}
+
+.mainBox > .sec > .basicInforBox > .buttonBox > .mbmb{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.mainBox > .sec > .basicInforBox > .buttonBox{
+    margin-top: 24px;
+}
+
+
+
+
+.mainBox > .sec > .basicInforBox > #pdl > .inforBox > .inforText{ padding-left: 12px; }
+.mainBox > .sec > .basicInforBox > .sub_information > .inforBox > .pdl{ padding-left: 12px; }
+.mainBox > .sec > .basicInforBox > .sub_information > .inforBox > .inforText > .llName{ width: 60%; }
+
+.mainBox > .sec > .basicInforBox > .sub_information > .inforBox > .inforText > .llPrice{
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+}
+.mainBox > .sec > .basicInforBox > .sub_information > .inforBox > .inforText > .edit{
+    width: 20%;
+    text-align: center;
+    background-color: #CD2026;
+    color: white;
+    border-radius: 12px;
+}
+
+.mainBox > .sec > .basicInforBox > .header_Box > .mart24{ margin-top: 48px; }
+.mainBox > .sec > .basicInforBox > .sub_information > .servoce_box{
+    padding: 16px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    position: relative;
+}
+.mainBox > .sec > .basicInforBox > .sub_information > .servoce_box > .ser_title{
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.mainBox > .sec > .basicInforBox > .sub_information > .servoce_box > .message > .check{
+    display: block !important;
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-right: 8px;
+    line-height: 0.9rem !important;
+}
+.mainBox > .sec > .basicInforBox > .sub_information > .servoce_box > .message{
+    display: flex;
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+.mainBox > .sec > .basicInforBox > .sub_information > .servoce_box > .ser_option{
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 2px;
+}
+.mainBox > .sec > .basicInforBox > .sub_information > .servoce_box > .session{
+    padding-left: 6px;
+    padding-right: 6px;
+    border: 1px solid #CD2026;
+    color: #CD2026;
+    width: 60px;
+    text-align: center;
+    border-radius: 8px;
+    position: absolute;
+    right: 32px;
+    bottom: 18px;
+}
+
+
+.mainBox > .sec > .bsha > .header_Box{
+    width: 90%;
+    margin: auto;
+}
+
+.mainBox > .sec > .bsha{
+    width: 100% !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    border-radius: 12px;
+    margin-bottom: 24px;
+    padding-bottom: 36px;
+}
+
+
+.mainBox > .sec > .bsha > .header_Box > .SeeMoreButton{
+    margin-top: 24px;
+    width: 70px;
+    text-align: center;
+    background-color: #CD2026;
+    height: min-content;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 12px;
+    color: white;
+}
+.mainBox > .sec > .bsha > .CountBox{
+    margin: auto;
+    background-color: #F5F5F7;
+    width : 85%;
+    padding: 6px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mainBox > .sec > .bsha > .listBox{
+    width: 85%;
+    height: 470px;
+    margin: auto;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+}
+
+.mainBox > .sec > .bsha > .listBox::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+
+.mainBox > .sec > .bsha > .listBox > .list_item{
+    width: 100%;
+    min-height: 120px;
+    margin-top: 16px;
+    display: flex;
+    border-bottom: 1px solid #eee;
+}
+.mainBox > .sec > .bsha > .listBox > .list_item > .list_img_box > .img_bg,
+.mainBox > .sec > .bsha > .listBox > .project_item > .list_img_box > .img_bg{
+    width: 70px;
+    height: 70px;
+    padding: 3px;
+    border : 1px solid #ddd;
+    border-radius: 100%;
+}
+
+.mainBox > .sec > .bsha > .listBox > .list_item > .list_img_box > .img_bg > .list_img,
+.mainBox > .sec > .bsha > .listBox > .project_item > .list_img_box > .img_bg > .list_img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    
+}
+.mainBox > .sec >.bsha > .listBox > .list_item > .list_text_box{
+    padding-left: 12px;
+    width: 100%;
+}
+.mainBox > .sec >.bsha > .listBox > .list_item > .list_text_box > .list_title{
+    margin-top: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.mainBox > .sec >.bsha > .listBox > .list_item > .list_text_box > .list_comName{
+    font-size: 0.8rem;
+    color: #828282;
+    margin-bottom: 8px;
+}
+.mainBox > .sec >.bsha > .listBox > .list_item > .list_text_box > .reviewBox{
+    display: block;
+    width: 350px;
+    padding: 3px;
+    background-color: #E8F2F3;
+    margin-bottom: 6px;
+    border: 1px solid #ddd;
+    position: relative;
+    border-radius: 8px;
+}
+.mainBox > .sec >.bsha > .listBox > .list_item > .list_text_box > .law_box{
+    width: 350px;
+    display: flex;
+    margin-top: 18px;
+    justify-content: space-between;
+    color: #828282;
+    font-size: 0.9rem;
+}
+.mainBox > .sec >.bsha > .listBox > .list_item > .list_text_box > .reviewBox span{
+    position: absolute;
+    right: 15px;
+}
+.mainBox > .sec >.bsha > .listBox > .project_item{
+    border: 1px solid #ddd;
+    width: 450px;
+    margin: auto;
+    padding: 12px;
+    display: flex;
+    border-radius: 18px;
+    box-shadow: 0 0 3px rgba(0,0,0, .3);
+    margin-bottom: 12px;
+    position: relative;
+}
+.mainBox > .sec >.bsha > .listBox > .project_item > .project_list_text_box{
+    width: 350px;
+    padding-left: 18px;
+}
+
+.mainBox > .sec >.bsha > .listBox > .project_item > .project_list_text_box > .session_text{
+    margin-top: 8px;
+    background-color: #CD2026;
+    color: white;
+    width: fit-content;
+    padding: 4px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+}
+
+.mainBox > .sec >.bsha > .listBox > .project_item > .project_list_text_box > .blue{
+    background-color: #56546D !important;
+}
+.mainBox > .sec >.bsha > .listBox > .project_item > .project_list_text_box > .project_price{
+    color: #828282;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+.mainBox > .sec >.bsha > .listBox > .project_item > .project_list_text_box > .posi{
+    position: absolute;
+    right: 10px;
+    bottom : 40%;
+    top : 45%;
+    color: #828282 !important;
+}
